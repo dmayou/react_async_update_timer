@@ -1,7 +1,7 @@
 // Example file showing use of useTimer() custom hook
 
 import React, { useState } from 'react';
-import useTimer from './usetimer';
+import useTimer from './useTimer';
 const oneSecond = 1000;
 
 const Timer = () => {
