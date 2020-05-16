@@ -20,7 +20,7 @@ const useTimer = (timeOut, increment, callBack, useActualElapsed = false) => {
       setRemainingTime(elapsedTime);
     }, increment);
     
-    if (remainingTime <= 0) { // works because actual intervals are never shorter
+    if (remainingTime <= 0) { // works because actual intervals are never shorter than increment
       setStartTime(Date.now());
       setRemainingTime(timeOut);
       callBack();
