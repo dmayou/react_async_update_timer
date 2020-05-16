@@ -1,12 +1,22 @@
 {
   "name": "react_async_update_timer",
-  "version": "0.1.0",
-  "dependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+  "version": "1.0.0",
+  "description": "React custom hook to update functional component each interval",
+  "main": "useTimer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dmayou/react_async_update_timer.git"
   },
+  "keywords": [
+    "NFC"
+  ],
+  "author": "David Mayou",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/dmayou/react_async_update_timer/issues"
+  },
+  "homepage": ""
 }
