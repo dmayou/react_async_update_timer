@@ -13,7 +13,14 @@ const Timer = () => {
       setData(now);
     }, asyncDelay);
   }
-  const timeLeft = useTimer(10 * oneSecond, 1 * oneSecond, fetchData, false);
+  const timeLeft = useTimer(
+    10 * oneSecond, // timer counts down for this many ms
+    1 * oneSecond,  // hook returns ms left after each interval ms
+    fetchData,      // this function is called when the timer expires
+    false,          // true: calculate elapsed time from system time. false: calculate from browser run time
+    null,           // integer number of repeats, or null = infinite repeat
+    false           // true: wait to exectute callback until timer first expires. false: callback exectutes immediately
+  );
   return (<div>
             &lt; {timeLeft} ms until next update. Last update time was: {data} ms
           </div>

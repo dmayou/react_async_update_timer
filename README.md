@@ -16,5 +16,3 @@ import useTimer from 'react-async-update-timer';
 ```
 See example usage in index.js. The callback function is an async function that awaits a setTimer() callback. In actual usage, the callback could await an ajax call.
 
-## Future Improvements
-Add a parameter for whether the callback function is called initially.
